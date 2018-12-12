@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.InformationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ivphoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            fresco:placeholderImage="@drawable/photo"
+            >
+        </com.facebook.drawee.view.SimpleDraweeView>
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c7c5c5"
+            android:layout_marginTop="7dp"
+            android:paddingTop="6dp"
+            android:paddingLeft="4dp"
+            android:text="Nombre:"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c7c5c5"
+            android:layout_marginTop="7dp"
+            android:paddingTop="6dp"
+            android:paddingLeft="4dp"
+            android:text="Descripcion:"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvdescription"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text=""
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c7c5c5"
+            android:layout_marginTop="7dp"
+            android:paddingTop="6dp"
+            android:paddingLeft="4dp"
+            android:text="Direccion:"
+            android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/tvaddress"
+               android:layout_marginTop="4dp"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:text=""
+               />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c7c5c5"
+            android:layout_marginTop="7dp"
+            android:paddingTop="6dp"
+            android:paddingLeft="4dp"
+            android:text="Telefono:"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvtel"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c7c5c5"
+            android:layout_marginTop="7dp"
+            android:paddingTop="6dp"
+            android:paddingLeft="4dp"
+            android:text="Otros:"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Llamar"/>
+            <ImageButton
+                android:id="@+id/btncall"
+                android:scaleType="centerCrop"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:src="@drawable/cel"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Buscar en Google Maps"
+                />
+            <ImageButton
+                android:id="@+id/btnlocation"
+                android:scaleType="centerCrop"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:src="@drawable/ubicacion"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
